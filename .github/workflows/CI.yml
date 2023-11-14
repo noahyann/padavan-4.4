@@ -2,9 +2,9 @@ name: CI
 
 # Controls when the action will run. 
 on: 
-#  push:
-#  pull_request:
-#  workflow_dispatch:
+  push:
+  pull_request:
+  workflow_dispatch:
     inputs:
       debug_enabled:
         description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'     
@@ -27,7 +27,7 @@ jobs:
       matrix:
         include:
           - build_variant: "mt7621"
-            targets: "CR660x"
+            targets: "CR660x R2100 RM2100 K2P"
 #            targets: "K2P_nano K2P DIR-878 CR660x JCG-Q20"
 #          - build_variant: "mt7621-usb-1"
 #            targets: "XY-C1 JCG-836PRO JCG-Y2"
