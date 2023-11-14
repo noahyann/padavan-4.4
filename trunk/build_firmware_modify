@@ -128,7 +128,7 @@ cp -fL "$busybox_cf" "$busybox_tf"
 cp -fL "$board_mk" "$ROOTDIR/user/shared/board.mk"
 cp -fL "$board_h" "$ROOTDIR/user/shared/include/ralink_board.h"
 ######################### KVRH #############################
-func_enable_kernel_param "CONFIG_KVRH_SUPPORT"
+#func_enable_kernel_param "CONFIG_KVRH_SUPPORT"
 ############################# SMP #####################################
 if [ -n "$CONFIG_SMP" ] ; then
 	func_enable_busybox_param "CONFIG_FEATURE_TOP_SMP_CPU"
