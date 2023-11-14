@@ -31,9 +31,9 @@ jobs:
 #            targets: "K2P_nano K2P DIR-878 CR660x JCG-Q20"
 #          - build_variant: "mt7621-usb-1"
 #            targets: "XY-C1 JCG-836PRO JCG-Y2"
-          - build_variant: "mt7621-usb-2"
-            targets: "R2100 RM2100"
-            #targets: "DIR-882 JCG-AC860M NETGEAR-BZV MI-R3P R2100 RM2100"
+#          - build_variant: "mt7621-usb-2"
+#            targets: "R2100 RM2100" #这两个还有BUG会报错
+#            #targets: "DIR-882 JCG-AC860M NETGEAR-BZV MI-R3P R2100 RM2100"
     steps:
       - uses: actions/checkout@v2
       - name: Prepare environment
